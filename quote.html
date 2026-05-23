@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Free Quote | Marquez General Services</title>
+
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <!-- NAVBAR -->
+    <header class="navbar">
+        <div class="logo">
+            <span class="mg">MG</span><span class="s">s</span>
+        </div>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="services.html">Services</a>
+            <a href="contact.html">Contact</a>
+            <a href="quote.html" class="quote-btn">Free Quote</a>
+        </nav>
+    </header>
+
+    <!-- QUOTE FORM SECTION -->
+    <section class="quote-section">
+        <h1>Request a Free Quote</h1>
+        <p class="quote-subtext">Tell us about your project and we’ll get back to you with a personalized estimate.</p>
+
+        <form class="quote-form" action="https://formsubmit.co/marquezlawncare@hotmail.com" method="POST">
+
+            <!-- Hidden Settings -->
+            <input type="hidden" name="_subject" value="New Quote Request from Website">
+            <input type="hidden" name="_captcha" value="false">
+            <input type="hidden" name="_template" value="table">
+            <input type="hidden" name="_next" value="thankyou.html">
+
+            <div class="form-group">
+                <label>Your Name</label>
+                <input type="text" name="name" placeholder="Enter your full name" required>
+            </div>
+
+            <div class="form-group">
+                <label>Your Email</label>
+                <input type="email" name="email" placeholder="Enter your email address" required>
+            </div>
+
+            <div class="form-group">
+                <label>Your Phone</label>
+                <input type="text" name="phone" placeholder="Enter your phone number" required>
+            </div>
+
+            <div class="form-group">
+                <label>Service Needed</label>
+                <select name="service" required>
+                    <option value="">Select a service</option>
+                    <option>Landscaping</option>
+                    <option>Tree Removal</option>
+                    <option>Snow Removal</option>
+                    <option>Cleaning Services</option>
+                    <option>Home Maintenance</option>
+                    <option>Yard Cleanup</option>
+                    <option>Mulch or Rock Installation</option>
+                    <option>Other</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label>Project Details</label>
+                <textarea name="details" placeholder="Describe your project..." required></textarea>
+            </div>
+
+            <button type="submit" class="quote-submit">Get My Free Quote</button>
+
+        </form>
+    </section>
+
+</body>
+</html>
+
